@@ -42,7 +42,7 @@ def convolve_from_file(file_name):
 if __name__ == "__main__":
     test_file = 'examples.json'
     results = convolve_from_file(test_file)
-    for idx, (result, error) in enumerate(results, start=1):
+    for idx, (result, error) in enumerate(results):
         print(f"Test case {idx}:")
         if error is not None:
             print(f"Error occurred: {error}")
