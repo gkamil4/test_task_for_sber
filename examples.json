@@ -1,0 +1,39 @@
+{
+    "examples": [
+        {
+            "input": {"a": [1, 2, 3], "b": [4, 5]},
+            "expected_output": {"a": 6, "b": 9},
+            "function_name": "sum"
+        },
+        {
+            "input": {"x": [1, 2, 3], "y": [4, 5, 6]},
+            "expected_output": {"x": 2, "y": 5},
+            "function_name": "mean"
+        },
+        {
+            "input": {"p": [1, [2, 3, 4], [5, 6, 7]], "q": [{"r": 8, "s": 9}, {"t": 3, "u": 4}, 8]},
+            "expected_output": {"p": [1, 4, 7], "q": [9, 4, 8]},
+            "function_name": "max"
+        },
+        {
+            "input": 60,
+            "expected_output": 60,
+            "function_name": "sum"
+        },
+        {
+            "input": {"a": [1, 2, 3], "b": [4, 5], "q": [{"r": [8,9], "s": [10,11]}, {"t": 3, "u": 4}, 8]},
+            "expected_output": {"a": [1, 2, 3], "b": [4, 5], "q": [{"r": 8, "s": 10}, {"t": 3, "u": 4}, 8]},
+            "function_name": "min"
+        },
+        {
+            "input": [[1, [2, 3, [4, 5, [6,[7,8,9]]]]]],
+            "expected_output": [[1, [2, 3, [4, 5, [6, 8]]]]],
+            "function_name": "median"
+        },
+        {
+            "input": [],
+            "expected_output": 0,
+            "function_name": "sum"
+        }
+    ]
+}
